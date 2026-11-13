@@ -5,21 +5,21 @@
 class Customdomain < Formula
   desc "Connect custom domains to your app from the terminal"
   homepage "https://customdomain.ai"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.1/customdomain_0.1.1_darwin_amd64.tar.gz"
-      sha256 "e979731274c5c8db848371ecb71eddc4e83c0ed7c44ebddefc54fdc5c86b9786"
+      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.2/customdomain_0.1.2_darwin_amd64.tar.gz"
+      sha256 "ba886d69de3d6eed4548bea532ce8a9f13f55ebcc61319a51a955f42cb0a3d03"
 
       define_method(:install) do
         bin.install "customdomain"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.1/customdomain_0.1.1_darwin_arm64.tar.gz"
-      sha256 "e26cf63a552712c86baf8a1ed2645e210357387333778d8f91353f7c49aa31bb"
+      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.2/customdomain_0.1.2_darwin_arm64.tar.gz"
+      sha256 "ab20feedcce3a7c78379dee25bc51ae1682ed01f062318b8a28d7e71a0f16d9e"
 
       define_method(:install) do
         bin.install "customdomain"
@@ -29,15 +29,15 @@ class Customdomain < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.1/customdomain_0.1.1_linux_amd64.tar.gz"
-      sha256 "0a3766c246162b923c3ce62c9b66aea3d90b9663963639531d724be6fcc012a3"
+      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.2/customdomain_0.1.2_linux_amd64.tar.gz"
+      sha256 "bffc3ab9aa05071819368e975c16d54d785f252417c9da123c5ccb38d9f3d790"
       define_method(:install) do
         bin.install "customdomain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.1/customdomain_0.1.1_linux_arm64.tar.gz"
-      sha256 "5dc01027011314ad221e10afeefdcf08522e3fd08d690871c30a3d5d57726653"
+      url "https://github.com/CUSTOM-DOMAIN-APP/customdomain-cli/releases/download/v0.1.2/customdomain_0.1.2_linux_arm64.tar.gz"
+      sha256 "baec0cc1fdcca71153d7a2f78b0f4bcb217a9ff1969384645b7fd4eeddb1ff9c"
       define_method(:install) do
         bin.install "customdomain"
       end
